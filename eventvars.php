@@ -1,5 +1,4 @@
 <?php
-// Event Variables
 $path ="http://www.twodaystofreedom.com/";
 $event = "Wealth Building Conference";
 $date = "September 15th - 16th, 2012";
