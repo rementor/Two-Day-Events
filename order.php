@@ -45,17 +45,17 @@
 				<td width="140">
 				</td>
 				<td>
-				<span id="Checkbox0" class="InputGroup">
-				<label for="Checkbox0_1">
-				<input type="radio" name="Checkbox0" value="<?php echo $liveTag;?>" id="Checkbox0_1">
-				LIVE EVENT
-				</label>
-				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<label for="Checkbox0_2">
-				<input type="radio" name="Checkbox0" value="<?php echo $homeTag;?>" id="Checkbox0_2">
-				SIMULCAST
-				</label>
-				</span>
+				<fieldset>
+					<label for="Checkbox0_1">
+					<input type="radio" name="Checkbox0" value="<?php echo $liveTag;?>" id="Checkbox0_1" class="required">
+					LIVE EVENT
+					</label>
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<label for="Checkbox0_2">
+					<input type="radio" name="Checkbox0" value="<?php echo $homeTag;?>" id="Checkbox0_2">
+					SIMULCAST
+					</label>
+				</fieldset>
 				</td>
 			</tr>
 		</table>
@@ -67,26 +67,26 @@
 		</tr>
 		<tr>
 		    <td class='sale-label-req'>
-			First Name*: 
+			<label for="Contact0FirstName">First Name*:</label>
 			</td>
 			<td class='sale-label-req'>
-			<input type='text' size="42" name='Contact0FirstName' value='' id="Contact0FirstName" class="text">
-			</td>
-		</tr>
-		<tr>
-			<td class='sale-label-req'>
-			Last Name*: 
-			</td>
-			<td class='sale-label-req'>
-			<input type='text' size="42" name='Contact0LastName' value='' id="Contact0LastName" class="text">
+			<input type='text' size="42" name='Contact0FirstName' value='' id="Contact0FirstName" class="required">
 			</td>
 		</tr>
 		<tr>
 			<td class='sale-label-req'>
-			Email*: 
+			<label for="Contact0LastName">Last Name*:</label>
 			</td>
 			<td class='sale-label-req'>
-			<input type='text' size="42" name='Contact0Email' value='' id="Contact0Email" class="text">
+			<input type='text' size="42" name='Contact0LastName' value='' id="Contact0LastName" class="required">
+			</td>
+		</tr>
+		<tr>
+			<td class='sale-label-req'>
+			<label for="Contact0Email">Email*:</label>
+			</td>
+			<td class='sale-label-req'>
+			<input type='email' size="42" name='Contact0Email' value='' id="Contact0Email" class="required email">
 			</td>
 		</tr>
 		<tr>
@@ -94,7 +94,7 @@
 			Phone*: 
 			</td>
 			<td class='sale-label-req'>
-			<input type='text' size="42" name='Contact0Phone1' placeholder="e.g. 1234567890" value='' id="Contact0Phone1" class="text">
+			<input type='text' size="42" name='Contact0Phone1' placeholder="e.g. 1234567890" value='' id="Contact0Phone1" class="required">
 			</td>
 		</tr>
 		<tr>
@@ -102,7 +102,7 @@
 			Street Address 1*: 
 			</td>
 			<td id="Contact0StreetAddress1_data" valign="middle" align="left">
-			<input type="text" name="Contact0StreetAddress1" size="42" id="Contact0StreetAddress1" class="text" />
+			<input type="text" name="Contact0StreetAddress1" size="42" id="Contact0StreetAddress1" class="required" />
 			</td>
 		</tr>
 		<tr>
@@ -110,7 +110,7 @@
 			Street Address 2: 
 			</td>
 			<td id="Contact0StreetAddress2_data" align="left">
-			<input type="text" name="Contact0StreetAddress2" size="42" id="Contact0StreetAddress2" class="text" />
+			<input type="text" name="Contact0StreetAddress2" size="42" id="Contact0StreetAddress2" />
 			</td>
 		</tr>
 		<tr>
@@ -118,7 +118,7 @@
 			City*: 
 			</td>
 			<td id="Contact0City_data" align="left">
-			<input type="text" name="Contact0City" size="42" id="Contact0City" class="text" onBlur="calcTotals()" />
+			<input type="text" name="Contact0City" size="42" id="Contact0City" onBlur="calcTotals()" class="required" />
 			</td>
 		</tr>
 		<tr>
@@ -141,7 +141,14 @@
 			<option value="HI">Hawaii</option>
 			<option value="ID">Idaho</option>
 			<option value="IL">Illinois</option>
-			<option value="IN">Indiana</option>	<option value="IA">Iowa</option>	<option value="KS">Kansas</option>	<option value="KY">Kentucky</option>	<option value="LA">Louisiana</option>	<option value="ME">Maine</option>	<option value="MD">Maryland</option>	<option value="MA">Massachusetts</option>	<option value="MI">Michigan</option>	<option value="MN">Minnesota</option>	<option value="MS">Mississippi</option>	<option value="MO">Missouri</option>	<option value="MT">Montana</option>	<option value="NE">Nebraska</option>	<option value="NV">Nevada</option>	<option value="NH">New Hampshire</option>	<option value="NJ">New Jersey</option>	<option value="NM">New Mexico</option>	<option value="NY">New York</option>	<option value="NC">North Carolina</option>	<option value="ND">North Dakota</option>	<option value="OH">Ohio</option>	<option value="OK">Oklahoma</option>	<option value="OR">Oregon</option>	<option value="PA">Pennsylvania</option>	<option value="RI">Rhode Island</option>	<option value="SC">South Carolina</option>	<option value="SD">South Dakota</option>	<option value="TN">Tennessee</option>	<option value="TX">Texas</option>	<option value="UT">Utah</option>	<option value="VT">Vermont</option>	<option value="VA">Virginia</option>	<option value="WA">Washington</option>	<option value="WV">West Virginia</option>	<option value="WI">Wisconsin</option>	<option value="WY">Wyoming</option></select>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>	<option value="MI">Michigan</option>	<option value="MN">Minnesota</option>	<option value="MS">Mississippi</option>	<option value="MO">Missouri</option>	<option value="MT">Montana</option>	<option value="NE">Nebraska</option>	<option value="NV">Nevada</option>	<option value="NH">New Hampshire</option>	<option value="NJ">New Jersey</option>	<option value="NM">New Mexico</option>	<option value="NY">New York</option>	<option value="NC">North Carolina</option>	<option value="ND">North Dakota</option>	<option value="OH">Ohio</option>	<option value="OK">Oklahoma</option>	<option value="OR">Oregon</option>	<option value="PA">Pennsylvania</option>	<option value="RI">Rhode Island</option>	<option value="SC">South Carolina</option>	<option value="SD">South Dakota</option>	<option value="TN">Tennessee</option>	<option value="TX">Texas</option>	<option value="UT">Utah</option>	<option value="VT">Vermont</option>	<option value="VA">Virginia</option>	<option value="WA">Washington</option>	<option value="WV">West Virginia</option>	<option value="WI">Wisconsin</option>	<option value="WY">Wyoming</option></select>
 			</td>
 		</tr>
 		<tr>
@@ -149,7 +156,7 @@
 			Postal Code*: 
 			</td>
 			<td id="Contact0PostalCode_data" align="left">
-			<input type="text" name="Contact0PostalCode" placeholder="e.g. 12345" size="15" id="Contact0PostalCode" class="text" />
+			<input type="text" name="Contact0PostalCode" placeholder="e.g. 12345" size="15" id="Contact0PostalCode" class="required" />
 			</td>
 		</tr>
 		<tr>
@@ -158,66 +165,66 @@
 			</td>
 			<td id="Contact0Country_data" align="left">
 			<select class="inf-select default-input sale-text" id="Contact0Country" name="Contact0Country" onChange="calcTotals()">
-			<option value="">Please select a country</option>
-			<option value="Argentina">Argentina</option>
-   			<option value="Australia">Australia</option>
-		    <option value="Austria">Austria</option>
-		    <option value="Belgium">Belgium</option>
-		    <option value="Belize">Belize</option>
-		    <option value="Bolivia">Bolivia</option>
-		    <option value="Brazil">Brazil</option>
-		    <option value="Canada">Canada</option>
-		    <option value="Cape Verde">Cape Verde</option>
-		    <option value="Chile">Chile</option>
-		    <option value="China">China</option>
-		    <option value="Colombia">Colombia</option>
-		    <option value="Costa Rica">Costa Rica</option>
-		    <option value="Czech Republic">Czech Republic</option>
-		    <option value="Denmark">Denmark</option>
-		    <option value="Dominican Republic">Dominican Republic</option>
-		    <option value="Ecuador">Ecuador</option>
-		    <option value="El Salvador">El Salvador</option>
-		    <option value="Finland">Finland</option>
-		    <option value="France">France</option>
-		    <option value="Germany">Germany</option>
-		    <option value="Ghana">Ghana</option>
-		    <option value="Greece">Greece</option>
-		    <option value="Greenland">Greenland</option>
-		    <option value="Guatemala">Guatemala</option>
-		    <option value="Honduras">Honduras</option>
-		    <option value="Hong Kong SAR">Hong Kong SAR</option>
-		    <option value="Hungary">Hungary</option>
-		    <option value="Iceland">Iceland</option>
-		    <option value="India">India</option>
-		    <option value="Indonesia">Indonesia</option>
-		    <option value="Ireland">Ireland</option>
-		    <option value="Italy">Italy</option>
-		    <option value="Japan">Japan</option>
-		    <option value="Korea">Korea</option>
-		    <option value="Mexico">Mexico</option>
-		    <option value="Netherlands">Netherlands</option>
-		    <option value="The">The</option>
-		    <option value="New Zealand">New Zealand</option>
-		    <option value="Norway">Norway</option>
-		    <option value="Peru">Peru</option>
-		    <option value="Philippines">Philippines</option>
-		    <option value="Portugal">Portugal</option>
-		    <option value="Puerto Rico">Puerto Rico</option>
-		    <option value="Russia">Russia</option>
-		    <option value="South Africa">South Africa</option>
-		    <option value="Spain">Spain</option>
-		    <option value="Sweden">Sweden</option>
-		    <option value="Switzerland">Switzerland</option>
-		    <option value="Taiwan">Taiwan</option>
-		    <option value="United Arab Emirates">United Arab Emirates</option>
-		    <option value="United Kingdom">United Kingdom</option>
-		    <option value="United States" selected="selected">United States</option>
-		    <option value="Venezuela">Venezuela</option>
-		    <option value="JAMAICA">JAMAICA</option>
-		    <option value="HAITI">HAITI</option>
-		    <option value="COUNTRY">COUNTRY</option>
-		    <option value="LEBANON">LEBANON</option>
-		    <option value="MONTENEGRO">MONTENEGRO</option>
+				<option value="">Please select a country</option>
+				<option value="Argentina">Argentina</option>
+	   			<option value="Australia">Australia</option>
+			    <option value="Austria">Austria</option>
+			    <option value="Belgium">Belgium</option>
+			    <option value="Belize">Belize</option>
+			    <option value="Bolivia">Bolivia</option>
+			    <option value="Brazil">Brazil</option>
+			    <option value="Canada">Canada</option>
+			    <option value="Cape Verde">Cape Verde</option>
+			    <option value="Chile">Chile</option>
+			    <option value="China">China</option>
+			    <option value="Colombia">Colombia</option>
+			    <option value="Costa Rica">Costa Rica</option>
+			    <option value="Czech Republic">Czech Republic</option>
+			    <option value="Denmark">Denmark</option>
+			    <option value="Dominican Republic">Dominican Republic</option>
+			    <option value="Ecuador">Ecuador</option>
+			    <option value="El Salvador">El Salvador</option>
+			    <option value="Finland">Finland</option>
+			    <option value="France">France</option>
+			    <option value="Germany">Germany</option>
+			    <option value="Ghana">Ghana</option>
+			    <option value="Greece">Greece</option>
+			    <option value="Greenland">Greenland</option>
+			    <option value="Guatemala">Guatemala</option>
+			    <option value="Honduras">Honduras</option>
+			    <option value="Hong Kong SAR">Hong Kong SAR</option>
+			    <option value="Hungary">Hungary</option>
+			    <option value="Iceland">Iceland</option>
+			    <option value="India">India</option>
+			    <option value="Indonesia">Indonesia</option>
+			    <option value="Ireland">Ireland</option>
+			    <option value="Italy">Italy</option>
+			    <option value="Japan">Japan</option>
+			    <option value="Korea">Korea</option>
+			    <option value="Mexico">Mexico</option>
+			    <option value="Netherlands">Netherlands</option>
+			    <option value="The">The</option>
+			    <option value="New Zealand">New Zealand</option>
+			    <option value="Norway">Norway</option>
+			    <option value="Peru">Peru</option>
+			    <option value="Philippines">Philippines</option>
+			    <option value="Portugal">Portugal</option>
+			    <option value="Puerto Rico">Puerto Rico</option>
+			    <option value="Russia">Russia</option>
+			    <option value="South Africa">South Africa</option>
+			    <option value="Spain">Spain</option>
+			    <option value="Sweden">Sweden</option>
+			    <option value="Switzerland">Switzerland</option>
+			    <option value="Taiwan">Taiwan</option>
+			    <option value="United Arab Emirates">United Arab Emirates</option>
+			    <option value="United Kingdom">United Kingdom</option>
+			    <option value="United States" selected="selected">United States</option>
+			    <option value="Venezuela">Venezuela</option>
+			    <option value="JAMAICA">JAMAICA</option>
+			    <option value="HAITI">HAITI</option>
+			    <option value="COUNTRY">COUNTRY</option>
+			    <option value="LEBANON">LEBANON</option>
+			    <option value="MONTENEGRO">MONTENEGRO</option>
 			</select>
 			</td>
 		</tr>
@@ -239,10 +246,12 @@
 			Card Type*: 
 			</td>
 			<td id="CreditCard0CardType_data" align="left">
-			<select class="inf-select default-input sale-select-req" id="CreditCard0CardType" name="CreditCard0CardType" ><option value="">Please select a card type <span class='sale-req'>*</span></option><option value="American Express">American Express</option>
-		    <option value="Master Card">Master Card</option>
-     		<option value="Visa">Visa</option>
-			<option value="Discover">Discover</option>
+			<select class="inf-select default-input sale-select-req" id="CreditCard0CardType" name="CreditCard0CardType">
+				<option value="">Please select a card type <span class='sale-req'>*</span></option>
+				<option value="American Express">American Express</option>
+		    	<option value="Master Card">Master Card</option>
+     			<option value="Visa">Visa</option>
+				<option value="Discover">Discover</option>
      		</select>
 			</td>
 		</tr>
@@ -251,7 +260,7 @@
 			Card Number*: 
 			</td>
 			<td id="CreditCard0CardNumber_data" align="left">
-			<input type="text" name="CreditCard0CardNumber" maxlength="16" size="42" id="CreditCard0CardNumber" class="text"  autocomplete="off" />
+			<input type="text" name="CreditCard0CardNumber" maxlength="16" size="42" id="CreditCard0CardNumber" class="required"  autocomplete="off" />
 		 	</td>
 		</tr>
 		<tr>
@@ -260,18 +269,18 @@
 			</td>
 			<td id="CreditCard0ExpirationMonth_data" align="left">
 			<select class="inf-select default-input sale-select-req"   id="CreditCard0ExpirationMonth" name="CreditCard0ExpirationMonth" >
-			<option value="01">01</option>
-   			<option value="02">02</option>
-   			<option value="03">03</option>
-   			<option value="04">04</option>
-   			<option value="05">05</option>
-   			<option value="06">06</option>
-   			<option value="07">07</option>
-   			<option value="08">08</option>
-   			<option value="09">09</option>
-   			<option value="10">10</option>
-   			<option value="11">11</option>
-   			<option value="12">12</option>
+				<option value="01">01</option>
+	   			<option value="02">02</option>
+	   			<option value="03">03</option>
+	   			<option value="04">04</option>
+	   			<option value="05">05</option>
+	   			<option value="06">06</option>
+	   			<option value="07">07</option>
+	   			<option value="08">08</option>
+	   			<option value="09">09</option>
+	   			<option value="10">10</option>
+	   			<option value="11">11</option>
+	   			<option value="12">12</option>
 		    </select>
 			</td>
 		</tr>
@@ -280,22 +289,22 @@
 			Expiration Year*:
 			</td>
 			<td id="CreditCard0ExpirationYear_data" valign="top" align="left">
-			<select class="inf-select default-input sale-select-req" id="CreditCard0ExpirationYear" name="CreditCard0ExpirationYear" >
-			<option value="2010">2010</option>
-		    <option value="2011">2011</option>
-		    <option value="2012">2012</option>
-		    <option value="2013">2013</option>
-		    <option value="2014">2014</option>
-		    <option value="2015">2015</option>
-		    <option value="2016">2016</option>
-		    <option value="2017">2017</option>
-		    <option value="2018">2018</option>
-		    <option value="2019">2019</option>
-		    <option value="2020">2020</option>
-		    <option value="2021">2021</option>
-		    <option value="2022">2022</option>
-		    <option value="2023">2023</option>
-		    <option value="2024">2024</option>
+			<select class="inf-select default-input sale-select-req" id="CreditCard0ExpirationYear" name="CreditCard0ExpirationYear">
+				<option value="2010">2010</option>
+			    <option value="2011">2011</option>
+			    <option value="2012">2012</option>
+			    <option value="2013">2013</option>
+			    <option value="2014">2014</option>
+			    <option value="2015">2015</option>
+			    <option value="2016">2016</option>
+			    <option value="2017">2017</option>
+			    <option value="2018">2018</option>
+			    <option value="2019">2019</option>
+			    <option value="2020">2020</option>
+			    <option value="2021">2021</option>
+			    <option value="2022">2022</option>
+			    <option value="2023">2023</option>
+			    <option value="2024">2024</option>
 		    </select>
 			</td>
 		</tr>
@@ -304,7 +313,7 @@
 			CVC*:
 			</td>
 			<td id="CreditCard0VerificationCode_data" align="left">
-		    <input type="text" name="CreditCard0VerificationCode" size="10" id="CreditCard0VerificationCode" class="default-input sale-select-req" /></td>
+		    <input type="text" name="CreditCard0VerificationCode" size="10" id="CreditCard0VerificationCode" class="required" /></td>
 		    </td>
 		</tr>
 		<tr>
@@ -327,7 +336,7 @@
 		</tr>
 		<tr>
 			<td>
-			<input type=radio class=radio name=PurchaseType value="A" checked onClick="calcTotals()">
+			<input type="radio" class="radio" name="PurchaseType" value="A" checked onClick="calcTotals()">
 			<input name="PayTotal_A" id="PayTotal_A" type="hidden" value="39.0" />
 			<input name="PlanCount_A" id="PlanCount_A" type="hidden" value="1" /> 1 Payment of $39
 			</td>

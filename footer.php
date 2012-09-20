@@ -24,7 +24,7 @@
   <script src="<?php echo $path;?>js/plugins.js"></script>
   <script src="<?php echo $path;?>js/script.js"></script>
   <script type="text/javascript" src="<?php echo $path;?>js/jquery.fancybox.js"></script>
-  <script type="text/javascript" src="<?php echo $path;?>js/jquery.validate.js"></script>
+  <script src="<?php echo $path;?>js/jquery.validate.min.js" type="text/javascript"></script>
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.

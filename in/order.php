@@ -29,9 +29,9 @@
 		javaEnabled.setAttribute('name', 'javaEnabled');
 		javaEnabled.setAttribute('value', java);
 		form.appendChild(javaEnabled);">
-		<input value="26ea1e424552634dbf084249de0b4325" type="hidden" name="infusion_xid" id="infusion_xid" />
+		<input value="31abfdfbed1643765611931b8b6c2146" type="hidden" name="infusion_xid" id="infusion_xid" />
 		<input value="CustomFormSale" type="hidden" name="infusion_type" id="infusion_type" />
-		<input value="Wealth Conference Baltimore, MD Sept 15 2012 - IN" type="hidden" name="infusion_name" id="infusion_name" />
+		<input value="Wealth Conference Nashville, TN Oct 2012 - IN" type="hidden" name="infusion_name" id="infusion_name" />
 		<input type="hidden" name="PromoCode" id="PromoCode" value="<?php echo $promoCode;?>" />
 		<input type="hidden" name="CAttempt" id="CAttempt" />
 		<table align="center">

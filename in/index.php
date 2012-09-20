@@ -134,7 +134,7 @@
 			<p class="clearfix"></p>
 			</div>
 		<h2>Reserve your seat now for this closed-door, limited event:</h2>
-		<p align="center"><a href="<?php echo $path;?>order.php"><img src="<?php echo $path;?>img/btn-reserve-access.jpg" width="622" height="130" alt="Reserve Your Seat Now!"></a></p>
+		<p align="center"><a href="order.php"><img src="<?php echo $path;?>img/btn-reserve-access.jpg" width="622" height="130" alt="Reserve Your Seat Now!"></a></p>
 			<div class="bluebox">
 			<h1>Listen to what others had to say about our events</h1>
 			<ul class="testimonials">
@@ -170,7 +170,7 @@
 		with a proven game plan that triumphant real estate investors have used repeatedly -- and that's guaranteed to explode my income in 2012!</p>
 		<p>I understand that I get these <strong>FREE bonus gifts worth hundreds of dollars!</strong></p>
 		<p align="center"><img src="<?php echo $path;?>img/bonus-wealthkit.jpg" width="899" height="684" alt="Free Wealth Kit When You Attend"></p>
-		<p align="center"><a href="<?php echo $path;?>order.php"><img src="<?php echo $path;?>img/btn-reserve.gif" width="360" height="108" alt="Reserve Your Seat Now!"></a></p>
+		<p align="center"><a href="order.php"><img src="<?php echo $path;?>img/btn-reserve.gif" width="360" height="108" alt="Reserve Your Seat Now!"></a></p>
 		<p>As you can see, I've thrown in everything except the kitchen sink.&nbsp; So make sure you get your spot by filling in the form now.</p>
 		<p>I can't wait to meet you in person! </p>
 		<p>Talk soon,</p>
