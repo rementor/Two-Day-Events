@@ -2,9 +2,6 @@
 $exitpop = 'false';
 include('eventvars.php');
 include('header.php');
-if (isset($_GET['Checkbox0'])) {
-	$attendTag = $_GET['Checkbox0'];
-}
 ?>
   	<div id="main">
 		<section class="thanks">
@@ -25,14 +22,7 @@ if (isset($_GET['Checkbox0'])) {
 			To Download this track click the following link or 'right click'<br>
 			and select 'Save Target As'. <a href="http://rementor.s3.amazonaws.com/audio/CallWithBobBowman.mp3">Download Track</a>
 			</div>		
-			<div class="<?php
-				if ($attendTag == $homeTag) {
-					echo "hidden";
-				}
-				else {
-					echo "location";
-				}
-			?>">
+			<div class="location">
 			<ul>
 				<li class="map">
 				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo $embedMap;?>"></iframe><br /><small><a href="<?php echo $embedMap;?>" style="color:#0000FF;text-align:left">View Larger Map</a></small>
@@ -42,17 +32,6 @@ if (isset($_GET['Checkbox0'])) {
 			    <?php echo $venue;?>
 				</li>
 			</ul>
-			</div>
-			<div class="<?php
-				if ($attendTag == $liveTag) {
-					echo "hidden";
-				}
-				else {
-					echo "webinar";
-				}
-			?>">
-			<p>For students attending from home, please visit the link below to confirm your registration and receive details regarding viewing from home.</p>
-			<p align="center"><a href="<?php echo $webinarLink;?>" target="_blank"><img src="img/btn-registernow.png" width="415" height="137" /></a></p>
 			</div>
 		</section>
   	</div>
