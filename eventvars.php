@@ -1,6 +1,6 @@
 <?php
 // Current Event is Raleigh, NC NOV 2012
-$path ="http://www.dave2dayevent.com/"; // Full URL Path (include slash at end)
+$path ="http://www.davetwodayevent.com/"; // Full URL Path (include slash at end)
 $event = "Wealth Building Conference"; // Event Title
 $date = "November 3rd - 4th, 2012"; // Event date, (e.g. January 1st, 2012)
 $regDate = "Saturday at 8:00 am"; // Registration day and time, (e.g. Saturday at 8:00 am)

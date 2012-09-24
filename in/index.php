@@ -44,7 +44,7 @@
 		today.</p>
 		<p><strong>You can't afford to miss  these strategies I'm revealing in this conference... strategies that have NEVER been revealed before. These are advanced 
 		tactics, the latest up-to-the-minute  methods that are working NOW!</strong></span></p>
-			<div class="bluebox">
+			<div class="bluedashed">
 			<h1>Listen to what others had to say about our events</h1>
 			<ul class="testimonials">
 				<li><a class="popup" href="<?php echo $path;?>testimonials.php?vid_id=A1718A64-A3F6-CDB5-D0CB5F101E4E2F1B"><img src="<?php echo $path;?>img/thumb-alank.jpeg" width="216" height="198" alt="Testimonials from Dave Lindahl Events"></a></li>
@@ -85,37 +85,39 @@
 		<p><strong>Oh, by the way, the $9,700 per month came from buying small 2 – 6 unit properties!</strong></p>
 		<p>But enough about me. I want to show you how to do the  same thing in a <?php echo $lengthAlpha;?>-day event that will change the way you make money forever, and I've picked one of the 
 		most glamorous, chic, and stylish places in America to hold it:</p>
-		<h1><?php echo $city . ", " . $stateFull;?>: You're About to Get <br> The Experience of a Lifetime!</h1>
-		<p><strong>NOTE: This is <u>NOT</u> a pitch-fest! My power team and I are here to deliver high-quality, valuable content, NOT  sell courses.</strong></p>
-		<h2><u>Here's a peek at what you&rsquo;ll get on <?php echo $date;?></u></h2>
-			<div class="bonus-list">
-			<ul class="checkbull">
-				<li>
-				<strong><?php echo $lengthAlpha;?> days of hard-hitting REO tactics -- strategies I've  never taught before to anyone, secrets that have made me literally millions.  These are 
-				tips and tricks no one ANYWHERE is teaching -- that will force your business to succeed!</strong>
-				</li>
-				<li>
-				Get in on  information-packed sessions of advanced strategies -- what's working now --  that you can take back to your town to <strong>dominate</strong> your 
-				market.
-				</li>
-				<li>
-				<strong>High-level networking with potential joint-venture partners,<br> who can make your business boom!</strong>
-				</li>
-				<li>
-				Find out where the best deals are and how to get them before the competition.
-				</li>
-				<li>
-				Learn how to never ask for money and still get it. Funding has never been easier. I'll show you how I raised over 60 million dollars by focusing on 2 simple
-				strategies.
-				</li>
-				<li>
-				Discover the secret to Emerging Markets and learn firsthand how to make money when the market goes up OR down!
-				</li>
-			</ul>
-			<p class="clearfix"></p>
+			<div class="yellowdashed">
+			<h1><?php echo $city . ", " . $stateFull;?>: You're About to Get <br> The Experience of a Lifetime!</h1>
+			<p><strong>NOTE: This is <u>NOT</u> a pitch-fest! My power team and I are here to deliver high-quality, valuable content, NOT  sell courses.</strong></p>
+			<h2><u>Here's a peek at what you&rsquo;ll get on <?php echo $date;?></u></h2>
+				<div class="bonus-list">
+				<ul class="checkbull">
+					<li>
+					<strong><?php echo $lengthAlpha;?> days of hard-hitting REO tactics -- strategies I've  never taught before to anyone, secrets that have made me literally millions.  These are 
+					tips and tricks no one ANYWHERE is teaching -- that will force your business to succeed!</strong>
+					</li>
+					<li>
+					Get in on  information-packed sessions of advanced strategies -- what's working now --  that you can take back to your town to <strong>dominate</strong> your 
+					market.
+					</li>
+					<li>
+					<strong>High-level networking with potential joint-venture partners, who can make your business boom!</strong>
+					</li>
+					<li>
+					Find out where the best deals are and how to get them before the competition.
+					</li>
+					<li>
+					Learn how to never ask for money and still get it. Funding has never been easier. I'll show you how I raised over 60 million dollars by focusing on 2 simple
+					strategies.
+					</li>
+					<li>
+					Discover the secret to Emerging Markets and learn firsthand how to make money when the market goes up OR down!
+					</li>
+				</ul>
+				<p class="clearfix"></p>
+				</div>
 			</div>
 		<h1>Who Should Attend This Event?</h1>
-			<div class="graybox">
+			<div class="graydashed">
 			<img src="<?php echo $path;?>img/icon-attend.png" width="128" height="128" alt="Who Should Attend?" class="imgleft">
 			<ul class="who right">
 				<li><strong>Real estate investors </strong></li>
@@ -135,7 +137,7 @@
 			</div>
 		<h2>Reserve your seat now for this closed-door, limited event:</h2>
 		<p align="center"><a href="order.php"><img src="<?php echo $path;?>img/btn-reserve-access.jpg" width="622" height="130" alt="Reserve Your Seat Now!"></a></p>
-			<div class="bluebox">
+			<div class="bluedashed">
 			<h1>Listen to what others had to say about our events</h1>
 			<ul class="testimonials">
 				<li><a class="popup" href="<?php echo $path;?>testimonials.php?vid_id=A1A4FC30-B184-5A0E-1E3D5DDE35DD7A0A"><img src="<?php echo $path;?>img/thumb-frankl.jpeg" width="216" height="198" alt="Testimonials from Dave Lindahl Events"></a></li>
@@ -165,10 +167,12 @@
 		&quot;classroom-style&quot; event so you can take notes and feel comfortable. We'll even give you a pen and pad of paper.&nbsp; Have a glass of water, relax.&nbsp; We 
 		give you all this so you can be comfortable, not so we can pack people in like cattle.&nbsp; <span class="highlighter"><strong>There's a catch though ... Classroom seating 
 		takes up a lot of room, so the event will be limited &nbsp;to only 200 serious investors, so don't wait ... REGISTER NOW!</strong></p>
-		<h1>Claim Your Seat at the <?php echo $event;?>; in <?php echo $city . ", " . $stateAbbv;?> Right Now...</h1>
-		<p>YES!I want to claim my seat at the <?php echo $event;?>; in <?php echo $city . ", " . $stateAbbv;?> to snowball the growth of my business, starting right now, 
-		with a proven game plan that triumphant real estate investors have used repeatedly -- and that's guaranteed to explode my income in 2012!</p>
-		<p>I understand that I get these <strong>FREE bonus gifts worth hundreds of dollars!</strong></p>
+			<div class="yellowdashed">
+			<h1>Claim Your Seat at the <?php echo $event;?>; in <?php echo $city . ", " . $stateAbbv;?> Right Now...</h1>
+			<p>YES!I want to claim my seat at the <?php echo $event;?>; in <?php echo $city . ", " . $stateAbbv;?> to snowball the growth of my business, starting right now, 
+			with a proven game plan that triumphant real estate investors have used repeatedly -- and that's guaranteed to explode my income in 2012!</p>
+			<p>I understand that I get these <strong>FREE bonus gifts worth hundreds of dollars!</strong></p>
+			</div>
 		<p align="center"><img src="<?php echo $path;?>img/bonus-wealthkit.jpg" width="899" height="684" alt="Free Wealth Kit When You Attend"></p>
 		<p align="center"><a href="order.php"><img src="<?php echo $path;?>img/btn-reserve.gif" width="360" height="108" alt="Reserve Your Seat Now!"></a></p>
 		<p>As you can see, I've thrown in everything except the kitchen sink.&nbsp; So make sure you get your spot by filling in the form now.</p>
