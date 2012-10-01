@@ -3,6 +3,7 @@
   	<div id="main">
 		<section class="step1">
 		<p align="center"><img src="img/grantfundingexpertuspackage.jpeg" width="590" height="490" alt="Grant Funding Package"></p>
+		<p align="center"><img src="img/chrisj-bonuses.jpg" width="848" height="403" alt="Bonuses you will receive for ordering!"></p>
 		<form id="orderForm" action="https://m160.infusionsoft.com/AddForms/processFormSecure.jsp" method='Post' onsubmit="var form = document.forms[0];
 		var resolution = document.createElement('input');
 		resolution.setAttribute('id', 'screenResolution');
