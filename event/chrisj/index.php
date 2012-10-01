@@ -33,6 +33,7 @@
 		<input value="CustomFormSale" type="hidden" name="infusion_type" id="infusion_type" />
 		<input value="<?php echo $productName;?>" type="hidden" name="infusion_name" id="infusion_name" />
 		<input type="hidden" name="PromoCode" id="PromoCode" value="<?php echo $productCode;?>" />
+		<input class='sale-text' type='hidden' name="infusion_custom_url" value='<?php echo $path;?>'>
 		<input type="hidden" name="CAttempt" id="CAttempt" />
 		<table width="600" cellspacing="0" cellpadding="5" class='sale-table' align="center">
 			<tr>
@@ -45,7 +46,7 @@
 				First Name: 
 				</td>
 				<td class='sale-label-req'>
-				<input type='text' size="42" name='Contact0FirstName' value=''>
+				<input type='text' size="42" name='Contact0FirstName' value='' class="required">
 				</td>
 			</tr>
 			<tr>
@@ -53,7 +54,7 @@
 				Last Name: 
 				</td>
 				<td class='sale-label-req'>
-				<input type='text' size="42" name='Contact0LastName' value=''>
+				<input type='text' size="42" name='Contact0LastName' value='' class="required">
 				</td>
 			</tr>
 			<tr>
@@ -61,7 +62,7 @@
 				Email: 
 				</td>
 				<td class='sale-label-req'>
-				<input type='text' size="42" name='Contact0Email' value=''>
+				<input type='text' size="42" name='Contact0Email' value='' class="required">
 				</td>
 			</tr>
 			<tr>
@@ -69,7 +70,7 @@
 				Phone: 
 				</td>
 				<td class='sale-label-req'>
-				<input type='text' size="42" name='Contact0Phone1' value=''>
+				<input type='text' size="42" name='Contact0Phone1' value='' class="required">
 				</td>
 			</tr>
 			<tr>
@@ -77,7 +78,7 @@
 				Street Address 1: 
 				</td>
 				<td id="Contact0StreetAddress1_data" valign="middle" align="left">
-				<input type="text" name="Contact0StreetAddress1" size="42" id="Contact0StreetAddress1" />
+				<input type="text" name="Contact0StreetAddress1" size="42" id="Contact0StreetAddress1" class="required" />
 				</td>
 			</tr>
 			<tr>
@@ -93,7 +94,7 @@
 				City: 
 				</td>
 				<td id="Contact0City_data" align="left">
-				<input type="text" name="Contact0City" size="42" id="Contact0City" class="default-input sale-text-req" onBlur="calcTotals()" />
+				<input type="text" name="Contact0City" size="42" id="Contact0City" class="required" onBlur="calcTotals()" />
 				</td>
 			</tr>
 			<tr>
@@ -116,7 +117,43 @@
 				<option value="HI">Hawaii</option>
 				<option value="ID">Idaho</option>
 				<option value="IL">Illinois</option>
-				<option value="IN">Indiana</option>	<option value="IA">Iowa</option>	<option value="KS">Kansas</option>	<option value="KY">Kentucky</option>	<option value="LA">Louisiana</option>	<option value="ME">Maine</option>	<option value="MD">Maryland</option>	<option value="MA">Massachusetts</option>	<option value="MI">Michigan</option>	<option value="MN">Minnesota</option>	<option value="MS">Mississippi</option>	<option value="MO">Missouri</option>	<option value="MT">Montana</option>	<option value="NE">Nebraska</option>	<option value="NV">Nevada</option>	<option value="NH">New Hampshire</option>	<option value="NJ">New Jersey</option>	<option value="NM">New Mexico</option>	<option value="NY">New York</option>	<option value="NC">North Carolina</option>	<option value="ND">North Dakota</option>	<option value="OH">Ohio</option>	<option value="OK">Oklahoma</option>	<option value="OR">Oregon</option>	<option value="PA">Pennsylvania</option>	<option value="RI">Rhode Island</option>	<option value="SC">South Carolina</option>	<option value="SD">South Dakota</option>	<option value="TN">Tennessee</option>	<option value="TX">Texas</option>	<option value="UT">Utah</option>	<option value="VT">Vermont</option>	<option value="VA">Virginia</option>	<option value="WA">Washington</option>	<option value="WV">West Virginia</option>	<option value="WI">Wisconsin</option>	<option value="WY">Wyoming</option></select>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option></select>
 				</td>
 			</tr>
 			<tr>
@@ -124,7 +161,7 @@
 				Postal Code: 
 				</td>
 				<td id="Contact0PostalCode_data" align="left">
-				<input type="text" name="Contact0PostalCode" size="15" id="Contact0PostalCode" class="default-input sale-text-req" />
+				<input type="text" name="Contact0PostalCode" size="15" id="Contact0PostalCode" class="required" />
 				</td>
 			</tr>
 			<tr>
@@ -214,7 +251,9 @@
 				Card Type: 
 				</td>
 				<td id="CreditCard0CardType_data" align="left">
-				<select class="inf-select default-input sale-select-req"   id="CreditCard0CardType" name="CreditCard0CardType" ><option value="">Please select a card type <span class='sale-req'>*</span></option><option value="American Express">American Express</option>
+				<select class="inf-select default-input sale-select-req"  id="CreditCard0CardType" name="CreditCard0CardType" >
+				<option value="">Please select a card type <span class='sale-req'>*</span></option>
+				<option value="American Express">American Express</option>
 			    <option value="Master Card">Master Card</option>
 	     		<option value="Visa">Visa</option>
 				<option value="Discover">Discover</option>
@@ -226,7 +265,7 @@
 				Card Number: 
 				</td>
 				<td id="CreditCard0CardNumber_data" align="left">
-				<input type="text" name="CreditCard0CardNumber" maxlength="16" size="42" id="CreditCard0CardNumber" class="default-input sale-text-req"  autocomplete="off" />
+				<input type="text" name="CreditCard0CardNumber" maxlength="16" size="42" id="CreditCard0CardNumber" class="required" autocomplete="off" />
 			 	</td>
 			</tr>
 			<tr>
@@ -234,7 +273,7 @@
 				Expiration Month: 
 				</td>
 				<td id="CreditCard0ExpirationMonth_data" align="left">
-				<select class="inf-select default-input sale-select-req"   id="CreditCard0ExpirationMonth" name="CreditCard0ExpirationMonth" >
+				<select class="inf-select default-input sale-select-req" id="CreditCard0ExpirationMonth" name="CreditCard0ExpirationMonth" >
 				<option value="01">01</option>
 	   			<option value="02">02</option>
 	   			<option value="03">03</option>
@@ -279,7 +318,7 @@
 				CVC
 				</td>
 				<td id="CreditCard0VerificationCode_data" align="left">
-			    <input type="text" name="CreditCard0VerificationCode" size="10" id="CreditCard0VerificationCode" class="default-input sale-select-req" /></td>
+			    <input type="text" name="CreditCard0VerificationCode" size="10" id="CreditCard0VerificationCode" class="required" /></td>
 			    </td>
 			</tr>
 			<tr>
@@ -302,7 +341,9 @@
 			</tr>
 			<tr>
 				<td>
-				<input type="radio" class="radio" name="PurchaseType" value="A" checked="" onclick="calcTotals()"> 1 Payment of $997
+				<input type="radio" class="radio" name="PurchaseType" value="A" checked onClick="calcTotals()">
+				<input name="PayTotal_A" id="PayTotal_A" type="hidden" value="997.0" />
+				<input name="PlanCount_A" id="PlanCount_A" type="hidden" value="1" /> 1 Payment of $997
 				</td>
 				<td class='sale-productdata'>
 				<B>$997</B>

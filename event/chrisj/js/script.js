@@ -2,6 +2,11 @@
 
 */
 
+/* Validaton */
+$(document).ready(function() {
+	$("#orderForm").validate();
+});
+
 /* FancyBox */
 $(document).ready(function() {
 	
