@@ -8,7 +8,7 @@
 			<div class="introvid">
 				<div class="player">
 				<script type="text/javascript">
-				var playerhost = (("https:" == document.location.protocol) ? "https://2daypromos.s3.amazonaws.com/ezs3js/secure/" : "http://2daypromos.s3.amazonaws.com/ezs3js/player/");
+				var playerhost = (("https:" == document.location.protocol) ? "https://rementor.s3.amazonaws.com/ezs3js/secure/" : "http://rementor.s3.amazonaws.com/ezs3js/player/");
 				document.write(unescape("%3Cscript src='" + playerhost + "flv/<?php echo $introVideo;?>.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
 				</script>
 				</div>
